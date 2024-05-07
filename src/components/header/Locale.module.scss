@@ -1,0 +1,61 @@
+@import "../../scss/utils/variables";
+
+.locale {
+  position: relative;
+  z-index: 10;
+
+  .icon {
+    cursor: pointer;
+    padding: 10px;
+    opacity: 0.6;
+
+    > span {
+      line-height: normal;
+    }
+  }
+
+  ul {
+    display: none;
+    background-color: $clr-gray-dark;
+    list-style: none;
+    position: absolute;
+    top: 46px;
+    right: -30px;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+
+    @media (max-width: $screen-size-xs) {
+      right: -20px;
+    }
+
+    [dir="rtl"] & {
+      left: 0;
+    }
+  }
+
+  li a {
+    padding: 10px;
+    margin: 0;
+    white-space: nowrap;
+    display: block;
+    text-transform: uppercase;
+    color: $clr-white-dark;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    ul {
+      display: block;
+    }
+
+    .icon {
+      background-color: $clr-gray-dark;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@import "../utils/variables";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+
+  & {
+    -moz-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+button {
+  appearance: none;
+  font-weight: $fw-normal;
+  border-width: 0;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+
+  & {
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+  }
+}
+
+input,
+select,
+textarea {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  font-weight: $fw-normal;
+}
+
+input:focus {
+  outline: 0;
+}
+
+*::-moz-focus-inner {
+  border: 0;
+}
+
+input,
+textarea {
+  box-sizing: content-box;
+}
+
+input[type="search"] {
+  appearance: textfield;
+  box-sizing: content-box;
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
+}

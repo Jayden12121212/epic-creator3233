@@ -1,0 +1,22 @@
+@import "../scss/utils/variables";
+
+.app {
+  background-color: $clr-theme-bg;
+  width: 100%;
+  height: 100%;
+
+  .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .page {
+      width: 90%;
+      max-width: 1920px;
+      margin-inline: auto;
+      min-height: 60vh;
+      padding-block-start: 10px;
+      padding-block-end: 60px;
+    }
+  }
+}

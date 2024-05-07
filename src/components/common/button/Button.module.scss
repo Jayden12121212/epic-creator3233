@@ -1,0 +1,74 @@
+@import "../../../scss/utils/variables";
+
+.button {
+  font-weight: $fw-medium;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  line-height: normal;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03rem;
+  color: $clr-white;
+  border-radius: 4px;
+  transition: color 125ms ease-in-out, background-color 125ms ease-in-out;
+  text-align: center;
+
+  & span {
+    font-weight: $fw-medium;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: $clr-gray;
+    opacity: 0.7;
+
+    > span {
+      opacity: 0.3;
+      display: block;
+    }
+  }
+}
+
+.primary,
+.secondary {
+  min-width: 180px;
+  padding: 0 1.25rem;
+  height: 60px;
+
+  @media (min-width: 1024px) and (max-width: 1280px) {
+    height: 40px;
+  }
+}
+
+.primary {
+  background-color: #0074e4;
+  color: #f4f4f4;
+
+  &:hover {
+    background-color: #339bff;
+  }
+}
+
+.secondary {
+  background: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border: 0.06rem solid rgba(255, 255, 255, 0.1);
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.tertiary {
+  padding: 0;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom: 1px solid currentColor;
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../scss/utils/variables";
+
+.container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $clr-white;
+  min-height: 450px;
+
+  &::after {
+    clear: both;
+    display: block;
+    content: "";
+  }
+
+  @media (min-width: $screen-size-lg) {
+    background-position: bottom right;
+  }
+}

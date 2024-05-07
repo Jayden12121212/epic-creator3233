@@ -1,0 +1,26 @@
+@import "../../scss/utils/variables";
+
+.logoHeader {
+  .logoLink {
+    display: inline-block;
+    vertical-align: middle;
+    color: $clr-white;
+  }
+
+  .advocateTitle {
+    font-size: 24px;
+    margin-right: 48px;
+    margin-left: 18px;
+    vertical-align: middle;
+    display: none;
+
+    @media (min-width: $screen-size-lg) {
+      display: inline-block;
+    }
+
+    [dir="rtl"] & {
+      margin-right: 48px;
+      margin-left: 18px;
+    }
+  }
+}

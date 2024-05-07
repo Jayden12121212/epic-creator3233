@@ -1,0 +1,125 @@
+@import "../../scss/utils/variables";
+
+.content {
+  min-height: calc(100vh - 110px);
+}
+
+.responsiveWrapper {
+  @media (max-width: $screen-size-md) {
+    margin-left: -10%;
+    width: 120%;
+  }
+}
+
+.sections {
+  .section {
+    padding: 40px 0;
+    margin: 0 30px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid hsla(0, 0, 100%, 0.1);
+    }
+
+    @media (min-width: $screen-size-lg) {
+      margin: 0 110px;
+    }
+
+    > h2 {
+      padding-bottom: 12px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    > p {
+      line-height: 1.5;
+      font-size: 16px;
+      font-weight: 200;
+    }
+  }
+}
+
+.errorMessage {
+  color: #ff0000;
+  padding-bottom: 30px;
+
+  @media (max-width: $screen-size-xs) {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0;
+  }
+}
+
+.submitSection {
+  padding-bottom: 2em;
+  flex-wrap: wrap;
+
+  @media (max-width: $screen-size-xs) {
+    display: flex;
+    padding: 5%;
+  }
+
+  .disclaimer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1em;
+
+    > span {
+      line-height: 1.5;
+      font-size: 0.8rem;
+      font-weight: 200;
+      padding-bottom: 2em;
+    }
+  }
+
+  a {
+    margin-right: 30px;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: $screen-size-xs) {
+      flex: 1;
+      min-width: 200px;
+      margin: 5%;
+    }
+  }
+
+  button {
+    margin-right: 2rem;
+
+    @media (max-width: $screen-size-xs) {
+      flex: 1;
+      min-width: 200px;
+      margin: 5%;
+    }
+  }
+}
+
+div.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 992px) {
+    width: 992px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.privacyPolicy {
+  padding-top: 16px;
+  font-size: 14px;
+  color: #0074e4;
+  width: 100%;
+
+  a,
+  a:visited {
+    color: #0074e4;
+  }
+}

@@ -1,0 +1,90 @@
+@import "../../../scss/utils/variables";
+
+.section {
+  color: $clr-white;
+
+  // h2,
+  // h6 {
+  //   margin: 0;
+  //   padding: 0;
+  // }
+
+  h2 {
+    padding: 70px 30px 0;
+    font-weight: 500;
+    font-size: 2em;
+    opacity: 0.6;
+
+    @media (max-width: $screen-size-xs) {
+      padding: 45px 5%;
+    }
+  }
+
+  div.detail {
+    border-bottom: 1px solid rgba($color: $clr-white, $alpha: 0.2);
+    padding: 55px 30px;
+
+    h6 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1;
+
+      @media (max-width: $screen-size-xs) {
+        font-size: 28px;
+      }
+    }
+
+    > div {
+      font-size: 16px;
+      padding-top: 20px;
+      line-height: 1.5;
+      font-weight: 300;
+      margin: 0;
+
+      a {
+        color: $clr-white-dark;
+        font-weight: 700;
+        text-decoration: underline;
+      }
+
+      ul,
+      ol {
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    @media (max-width: $screen-size-xs) {
+      padding: 10px 5%;
+    }
+  }
+
+  div.detail:last-child {
+    text-align: center;
+    border-bottom: 0;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  div.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (min-width: 768px) {
+      width: 768px;
+    }
+
+    @media (min-width: 992px) {
+      width: 992px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 1200px;
+    }
+  }
+}

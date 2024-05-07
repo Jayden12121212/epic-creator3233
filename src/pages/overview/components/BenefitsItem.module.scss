@@ -1,0 +1,77 @@
+@import "../../../scss/utils/variables";
+
+.benefitItem {
+  width: 100%;
+  display: flex;
+  margin: 20px 0;
+
+  @media (min-width: $screen-size-lg) {
+    max-width: 30%;
+  }
+
+  img {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  > div {
+    flex: 1;
+    width: 1px;
+
+    @media (min-width: $screen-size-xl) {
+      padding-top: 1em;
+    }
+
+    @media (max-width: $screen-size-xs) {
+      font-size: 0.8em;
+    }
+
+    @media (min-width: $screen-size-sm) {
+      font-size: 0.9em;
+    }
+
+    @media (min-width: $screen-size-md) {
+      font-size: 1em;
+    }
+
+    h3 {
+      margin-bottom: 15px;
+      font-size: 1em;
+      line-height: 1;
+      text-transform: uppercase;
+      word-break: break-all;
+
+      @media (max-width: $screen-size-xs) {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+      }
+
+      @media (min-width: $screen-size-sm) {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+      }
+
+      @media (min-width: $screen-size-md) {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      @media (min-width: $screen-size-lg) {
+        font-size: 1.3rem;
+      }
+
+      @media (min-width: $screen-size-xl) {
+        font-size: 1.8em;
+      }
+    }
+
+    > div {
+      margin-bottom: 15px;
+
+      a {
+        color: $clr-white;
+        text-decoration: underline;
+      }
+    }
+  }
+}

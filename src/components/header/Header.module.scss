@@ -1,0 +1,71 @@
+@import "../../scss/utils/variables";
+
+.header {
+  padding: 2.88rem 3.88rem;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+
+  @media (max-width: $screen-size-xs) {
+    padding: 5%;
+  }
+
+  &.border {
+    border-bottom: 0.06rem solid hsla(0, 0, 100%, 0.1);
+  }
+}
+
+.user {
+  text-align: right;
+  color: $clr-white;
+  white-space: nowrap;
+
+  > span {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px 14px 8px 3px;
+    border-right: 2px solid #bcbcbc;
+    opacity: 0.7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @media (max-width: 414px) {
+      max-width: 130px;
+    }
+
+    @media (max-width: 375px) {
+      max-width: 90px;
+    }
+
+    @media (max-width: 320px) {
+      padding: 8px;
+      max-width: 50px;
+    }
+
+    [dir="rtl"] & {
+      border-left: none;
+      padding: 8px 14px 8px 3px;
+    }
+  }
+
+  > a {
+    display: inline-block;
+    padding: 8px 3px 8px 14px;
+    color: $clr-white-dark;
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    @media (max-width: 320px) {
+      padding: 8px;
+    }
+
+    [dir="rtl"] & {
+      padding: 8px 3px 8px 14px;
+    }
+  }
+}
